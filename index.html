@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoods</title>
@@ -39,7 +38,7 @@
             transform: scale(1.1);
         }
 
-        /* Secret Button Styling */
+        
         #secretBtn {
             background-color: #000;
             color: #00FF00;
@@ -57,7 +56,7 @@
             background-color: #111;
         }
 
-        /* Cancel Button Styling */
+        
         #cancelBtn {
             background-color: #FF0000;
             color: #000;
@@ -74,7 +73,7 @@
             transform: scale(1.1);
         }
 
-        /* Modal Styling */
+       
         .modal {
             display: none;
             position: fixed;
@@ -95,7 +94,7 @@
             text-align: center;
         }
     </style>
-</head>
+<style type="text/css" id="operaUserStyle"></style></head>
 <body>
     <h1>Dope Hoods</h1>
     <p>Wanna buy some salts?</p>
@@ -103,33 +102,34 @@
     <button onclick="openModal('Out of stock mahn')">morpin$</button>
     <button onclick="openModal('Come back later')">Ec$tacy</button>
     <button onclick="openModal('sike!! das the wrg no')">r0in</button>
-    <button onclick="openCancelModal()">  Enter turf  </button>
+    <button onclick="openCancelModal()">&nbsp;&nbsp;Enter turf&nbsp;&nbsp;</button>
 
   
-    <button id="secretBtn" onclick="openSecretModal()">  </button>
+    <button id="secretBtn" onclick="openSecretModal()">&nbsp;&nbsp;</button>
     
     
-    <div id="myModal" class="modal">
+    <div id="myModal" class="modal" style="display: none;">
         <div class="modal-content">
-            <span onclick="closeModal()" style="color: #00FF00; cursor: pointer;">&times;</span>
-            <p id="modalText">This is a cool pop-up!</p>
+            <span onclick="closeModal()" style="color: #00FF00; cursor: pointer;">×</span>
+            <p id="modalText">Out of stock mahn</p>
         </div>
     </div>
-
+    <div style="position: relative">
+       <p style="color: #00FF00; font-size: small; font-family: 'MinecraftiaRegular';  position: centre; bottom: 0; width:100%; text-align: center;">your ip is 127.34.8.81 !! checkmate baka <br> its dope billa here</p></div>
 
 
     
-    <div id="secretModal" class="modal">
+    <div id="secretModal" class="modal" style="display: none;">
         <div class="modal-content">
-            <span onclick="closeSecretModal()" style="color: #00FF00; cursor: pointer;">&times;</span>
+            <span onclick="closeSecretModal()" style="color: #00FF00; cursor: pointer;">×</span>
             <p id="secretModalText">u found a secret (ZG0gbWUgdG8gZ2V0IHlvdXIgZ2lmdA==) </p>
         </div>
     </div>
 
     
-    <div id="cancelModal" class="modal">
+    <div id="cancelModal" class="modal" style="display: none;">
         <div class="modal-content">
-            <span onclick="closeCancelModal()" style="color: #00FF00; cursor: pointer;">&times;</span>
+            <span onclick="closeCancelModal()" style="color: #00FF00; cursor: pointer;">×</span>
             <p id="cancelModalText">Do you really wanna leave hoods?</p>
             <button id="cancelBtn" onclick="closeCancelModal()">Yeah!!</button>
         </div>
@@ -161,5 +161,5 @@
             document.getElementById("cancelModal").style.display = "none";
         }
     </script>
-</body>
-</html>
+
+</body></html>
