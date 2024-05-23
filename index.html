@@ -131,10 +131,24 @@
         <div class="modal-content">
             <span onclick="closeCancelModal()" style="color: #00FF00; cursor: pointer;">×</span>
             <p id="cancelModalText">Do you really wanna leave hoods?</p>
-            <button id="cancelBtn" onclick="closeCancelModal()">Yeah!!</button>
+            <button id="cancelBtn" onclick="redirectToWebsite()">Yeah!!</button>
         </div>
     </div>
 
+
+   <script>
+// Function to redirect to the website
+function redirectToWebsite() {
+    // Replace "https://example.com" with the actual URL of the website you want to redirect to
+    window.location.href = "https://theannoyingsite.com";
+}
+
+// Function to close the modal
+function closeCancelModal() {
+    var modal = document.getElementById("cancelModal");
+    modal.style.display = "none";
+}
+</script>
     <script>
         function openModal(message) {
             document.getElementById("modalText").innerText = message;
